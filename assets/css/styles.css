@@ -1,0 +1,242 @@
+/* font-family: 'Arimo', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 3;
+  color: #ffffff;
+  padding: 50px 60px 40px 40px;
+}
+
+header nav {
+  display: block;
+    position: relative;
+    float: right;
+}
+
+header nav a,
+header nav a:hover,
+header nav a:focus,
+header nav a:active {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  padding-right: 30px;
+  letter-spacing: 2px;
+}
+
+section {
+  width: auto;
+  max-width: 100vw;
+  position: relative;
+}
+
+section:not(:first-child) {
+  border-bottom: 8px solid #e5e5e5;
+  padding: 54px 30px;
+}
+
+#hero-banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/hero_image.png");
+  background-size: cover;
+}
+
+#hero-banner h1 {
+  width: 60vw;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  margin: 0;
+  padding-top: 40vh;
+  padding-left: 140px;
+  letter-spacing: 4px;
+  word-spacing: 4px;
+  cursor: default;
+}
+
+#hero-banner .scroll {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+#hero-banner .scroll img {
+  width: 45px;
+  height: 22.5px;
+}
+
+h2 {
+  font-family: "Arimo", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+}
+
+#about-us p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+  width: 84%;
+  margin: auto;
+  padding-bottom: 24px;
+}
+
+figure {
+  padding: 0px;
+  margin: 0px;
+}
+.grid-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.grid-container.three-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 80px;
+  padding: 0px;
+}
+#services .column {
+  text-align: center;
+}
+#services h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.grid-container.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 80px;
+}
+
+#projects h2 {
+  padding-bottom: 40px;
+}
+
+#projects .grid-container {
+  padding: 0 50px;
+}
+
+#projects .card {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+#projects .card a {
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 12px 16px;
+    background-color: #FFE600;
+    border-radius: 7px;
+    margin: 15px;
+}
+
+#projects .card > figure img {
+  width: 100%;
+  height: auto;
+}
+#projects .card .button,
+#projects .card .button:hover,
+#projects .card .button:focus,
+#projects .card .button:active {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000000;
+}
+#projects .card .button img {
+  width: 22px;
+}
+
+#projects .card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+#projects .card p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#projects .card span.label {
+  color: #FF7438;
+}
+#team .grid-container {
+  grid-column-gap: 0px;
+  padding-top: 40px;
+}
+#team .team-member {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+  margin: 5px 0;
+  padding-bottom: 100px;
+}
+
+#team .team-member .specialization {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+#team .team-member .member-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+#team .team-member p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 30px;
+  padding-right: 80px;
+}
+
+#team .team-member .contacts a {
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .right {
+  max-width: 350px;
+}
