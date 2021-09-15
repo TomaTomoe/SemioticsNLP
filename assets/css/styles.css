@@ -228,6 +228,11 @@ figure {
   margin: 5px 0;
   padding-bottom: 100px;
 }
+#team .team-member .info{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 #team .team-member figure {
   text-align: right;
 }
@@ -284,7 +289,9 @@ footer p.contact-us {
   width: fit-content;
   margin: auto;
 }
-
+footer img {
+  width: 250px;
+}
 
 @media only screen and (max-device-width: 1400px) {
   #hero-banner h1 {
@@ -338,6 +345,9 @@ footer p.contact-us {
 }
   footer .right {
     font-size: 12px;
+  }
+  footer img {
+    width: 250px;
   }
 }
 
