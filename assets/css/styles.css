@@ -350,6 +350,9 @@ footer p.contact-us {
     width: auto;
   }
   header nav a,
+  header nav a:hover,
+  header nav a:focus,
+  header nav a:active,
   #about-us p {
     font-size: 14px;
     line-height: 18px;
@@ -432,7 +435,10 @@ header nav {
   width: 100%;
   padding-top: 0;
 }
-header nav a {
+header nav a,
+header nav a:hover,
+header nav a:focus,
+header nav a:active {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
