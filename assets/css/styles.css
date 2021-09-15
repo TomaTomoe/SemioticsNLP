@@ -22,6 +22,11 @@ header {
   padding: 50px 60px 40px 40px;
 }
 
+header .logo {
+  height: 80px;
+  width: auto;
+}
+
 header nav {
   display: block;
     position: relative;
@@ -129,6 +134,12 @@ figure {
   font-weight: 700;
   font-size: 32px;
 }
+#services p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 31px;
+}
 .grid-container.two-column {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -162,6 +173,7 @@ figure {
 #projects .card > figure img {
   width: 100%;
   height: auto;
+  border-radius: 30px;
 }
 #projects .card .button,
 #projects .card .button:hover,
@@ -171,12 +183,22 @@ figure {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 22px;
+  line-height: 22px;
+  vertical-align: middle;
   color: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 #projects .card .button img {
   width: 22px;
 }
-
+#projects .card .button span {
+  padding-left: 10px;
+}
 #projects .card h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -205,6 +227,12 @@ figure {
   margin: 5px 0;
   padding-bottom: 100px;
 }
+#team .team-member figure {
+  text-align: right;
+}
+#team .team-member img {
+  max-width: 200px;
+}
 
 #team .team-member .specialization {
   font-family: 'Open Sans', sans-serif;
@@ -230,13 +258,236 @@ figure {
   text-decoration: none;
   margin-right: 25px;
 }
+#team .team-member .contacts a img {
+  height: 30px;
+  width: auto;
+}
 
 footer {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
   align-items: center;
+  justify-items: center;
+  padding: 40px;
 }
 
 footer .right {
   max-width: 350px;
+}
+
+footer p.copyrights {
+  font-size: 18px;
+}
+footer p.contact-us {
+  width: fit-content;
+  margin: auto;
+}
+
+
+@media only screen and (max-device-width: 1400px) {
+  #hero-banner h1 {
+    font-size: 42px;
+  }
+  .grid-wrapper {
+    width: 100%;
+  }
+  .grid-container.three-column {
+    grid-column-gap: 40px;
+  }
+  .grid-container.two-column {
+    grid-column-gap: 20px;
+  }
+  #projects .grid-container {
+    padding: 0;
+  }
+  #team .team-member p {
+    padding-right: 20px;
+  }
+  #team .team-member img {
+    max-width: 150px;
+  }
+  #team .team-member .specialization {
+    font-size: 18px;
+  }
+  #team .team-member .member-name {
+    font-size: 24px;
+  }
+  #projects .card h3 {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  #projects .card span.label {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  #projects .card p {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+  #projects .card .button,
+#projects .card .button:hover,
+#projects .card .button:focus,
+#projects .card .button:active {
+  font-size: 18px;
+  line-height: 18px;
+}
+#projects .card .button img {
+  width: 18px;
+}
+  footer .right {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-device-width: 1000px) {
+  header {
+    padding: 40px 40px 20px 40px;
+  }
+  header .logo {
+    height: 60px;
+    width: auto;
+  }
+  header nav a,
+  #about-us p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #hero-banner h1 {
+    font-size: 32px;
+    width: auto;
+    padding-right: 140px;
+  }
+  .grid-wrapper {
+    width: 100%;
+  }
+  .grid-container.three-column {
+    grid-column-gap: 40px;
+  }
+  .grid-container.two-column {
+    display: block;
+  }
+
+  #services h3  {
+    font-size: 20px;
+}
+#services p {
+  font-size: 14px;
+  line-height: 18px;
+}
+#projects .card h3 {
+  font-size: 22px;
+    padding: 0 40px;
+}
+#projects .card span.label {
+  font-size: 12px;
+  padding: 0 40px;
+}
+#projects .card p {
+  font-size: 18px;
+  padding: 0 40px;
+}
+#projects .card > figure img {
+  border-radius: 0px;
+}
+  
+#team .team-member img {
+  max-width: 230px;
+}
+  #team .team-member p {
+    padding-right: 40px;
+  }
+  
+  #projects .grid-container {
+    padding: 0;
+}
+  #projects {
+    padding: 30px 0px;
+  }
+  footer img {
+    width: 150px;
+  }
+}
+@media only screen and (max-device-width: 760px) {
+  header {
+    padding: 24px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+header .logo {
+  height: 60px;
+  width: auto;
+  order: 2;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+}
+header nav a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  white-space: nowrap;
+  letter-spacing: 0px;
+  padding: 0;
+  display: block;
+}
+  #hero-banner h1 {
+    font-size: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+#about-us p, #services p {
+  font-size: 18px;
+  line-height: 22px;
+}
+  .grid-container.three-column {
+    display: block;
+  }
+  #team .team-member img {
+    width: 100%;
+}
+footer {
+  display: block;
+}
+footer img {
+  width: 220px;
+}
+footer .contact-us {
+  padding-top: 40px;
+  text-align: center;
+}
+footer .right {
+  padding-top: 40px;
+  max-width: none;
+}
+}
+@media only screen and (max-device-width: 560px) {
+  #projects .card .button,
+  #projects .card .button:hover,
+  #projects .card .button:focus,
+  #projects .card .button:active {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  #projects .card .button img {
+    width: 14px;
+  }
+  #team .team-member {
+    display: block;
+  }
+  #team .team-member figure {
+    text-align: center;
+}
+#team .team-member img {
+  width: 200px;
+}
+
 }
