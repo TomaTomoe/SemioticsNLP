@@ -216,6 +216,11 @@ figure {
 
 #projects .card span.label {
   color: #FF7438;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  line-height: 24px;
+  vertical-align: middle;
 }
 #team .grid-container {
   grid-column-gap: 0px;
@@ -327,7 +332,10 @@ footer img {
   }
   #projects .card span.label {
     font-size: 14px;
-    padding: 0 20px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 20px;
+    vertical-align: middle;
   }
   #projects .card p {
     font-size: 18px;
@@ -395,7 +403,10 @@ footer img {
 }
 #projects .card span.label {
   font-size: 12px;
-  padding: 0 40px;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    line-height: 16px;
+    vertical-align: middle;
 }
 #projects .card p {
   font-size: 18px;
