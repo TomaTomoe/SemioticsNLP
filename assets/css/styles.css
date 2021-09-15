@@ -19,11 +19,11 @@ header {
   height: auto;
   z-index: 3;
   color: #ffffff;
-  padding: 50px 60px 40px 40px;
+  padding: 10px 60px 40px 40px;
 }
 
 header .logo {
-  height: 80px;
+  height: 100px;
   width: auto;
 }
 
@@ -31,6 +31,7 @@ header nav {
   display: block;
     position: relative;
     float: right;
+    padding-top: 40px;
 }
 
 header nav a,
@@ -342,10 +343,10 @@ footer p.contact-us {
 
 @media only screen and (max-device-width: 1000px) {
   header {
-    padding: 40px 40px 20px 40px;
+    padding: 10px 40px 20px 40px;
   }
   header .logo {
-    height: 60px;
+    height: 90px;
     width: auto;
   }
   header nav a,
@@ -411,14 +412,14 @@ footer p.contact-us {
 @media only screen and (max-device-width: 760px) {
   header {
     padding: 24px;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
 }
 header .logo {
-  height: 60px;
+  height: 100px;
   width: auto;
   order: 2;
 }
@@ -429,6 +430,7 @@ header nav {
   flex-wrap: nowrap;
   align-items: center;
   width: 100%;
+  padding-top: 0;
 }
 header nav a {
   font-size: 12px;
@@ -443,6 +445,7 @@ header nav a {
     font-size: 24px;
     padding-right: 24px;
     padding-left: 24px;
+    padding-top: 50vh;
 }
 #about-us p, #services p {
   font-size: 18px;
